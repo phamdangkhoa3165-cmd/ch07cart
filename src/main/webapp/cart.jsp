@@ -32,8 +32,8 @@
                     </form>
                 </td>
                 <td><c:out value="${item.product.description}"/></td>
-                <td>${item.product.priceCurrencyFormat}</td>
-                <td>${item.totalCurrencyFormat}</td>
+                <td><c:out value="${item.product.priceCurrencyFormat}"/></td>
+                <td><c:out value="${item.totalCurrencyFormat}"/></td>
                 <td>
                     <form action="cart" method="post">
                         <input type="hidden" name="action" value="cart">
