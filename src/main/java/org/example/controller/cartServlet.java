@@ -40,7 +40,7 @@ public class cartServlet extends HttpServlet {
         } else if (action.equals("checkout")) {
             request.getSession().removeAttribute("cart");
             url = "/index.html";
-        } else if (action.equals("cart")) {
+        } else if (action.equals("cart") || action.equals("update")) {
             HttpSession session = request.getSession();
             Cart cart = (Cart) session.getAttribute("cart");
             if (cart == null) {
@@ -54,7 +54,9 @@ public class cartServlet extends HttpServlet {
                     int quantity = parseQuantity(request.getParameter("quantity"));
                     LineItem lineItem = new LineItem(product, quantity);
 
-                    if (quantity > 0) {
+                    if (action.equals("update")) {
+                        cart.updateItem(lineItem);
+                    } else if (quantity > 0) {
                         cart.addItem(lineItem);
                     } else {
                         cart.removeItem(lineItem);

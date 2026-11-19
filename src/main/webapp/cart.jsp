@@ -25,7 +25,7 @@
             <tr>
                 <td>
                     <form class="qty-form" action="cart" method="post">
-                        <input type="hidden" name="action" value="cart">
+                        <input type="hidden" name="action" value="update">
                         <input type="hidden" name="productCode" value="<c:out value='${item.product.code}'/>">
                         <input type="number" class="qty-input" name="quantity" min="0" value="<c:out value='${item.quantity}'/>">
                         <input type="submit" value="Update">
