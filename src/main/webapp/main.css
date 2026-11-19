@@ -60,3 +60,7 @@ input[type="submit"]:active {
 .cart-table {
     margin-bottom: 1em;
 }
+
+.view-cart {
+    margin-top: 1em;
+}
