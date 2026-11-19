@@ -23,13 +23,6 @@ td {
     padding: 0.5em 0.6em;
 }
 
-/* Tạo độ rộng thoáng cho cột tên CD giống trong ảnh */
-th:first-child,
-td:first-child {
-    min-width: 390px;
-}
-
-/* Căn phải tiêu đề và giá tiền ở cột Price */
 .right {
     text-align: right;
     min-width: 65px;
