@@ -44,6 +44,11 @@
                 </td>
             </tr>
         </c:forEach>
+        <tr>
+            <th colspan="3">Total</th>
+            <td><strong><c:out value="${cart.totalCurrencyFormat}"/></strong></td>
+            <td></td>
+        </tr>
         </tbody>
     </table>
 
