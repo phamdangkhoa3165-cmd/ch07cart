@@ -47,7 +47,7 @@
         </tbody>
     </table>
 
-    <p>To change the quantity, enter the new quantity and click the Update button.</p>
+    <p><strong>To change the quantity</strong>, enter the new quantity and click the Update button.</p>
 
     <form action="cart" method="post">
         <input type="hidden" name="action" value="shop">

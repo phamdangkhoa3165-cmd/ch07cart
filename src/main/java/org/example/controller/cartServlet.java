@@ -35,12 +35,12 @@ public class cartServlet extends HttpServlet {
             action = "cart";
         }
 
-        if ("shop".equals(action)) {
+        if (action.equals("shop")) {
             url = "/index.html";
-        } else if ("checkout".equals(action)) {
+        } else if (action.equals("checkout")) {
             request.getSession().removeAttribute("cart");
             url = "/index.html";
-        } else if ("cart".equals(action)) {
+        } else if (action.equals("cart")) {
             HttpSession session = request.getSession();
             Cart cart = (Cart) session.getAttribute("cart");
             if (cart == null) {
